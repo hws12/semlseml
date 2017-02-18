@@ -1,0 +1,90 @@
+// Place all the styles related to the profile controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.vertical-container-profile {
+  height: 350px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.profile-content{
+  padding: 50px;
+}
+.profile-photo{
+  width: 100%;
+}
+.circular {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://link-to-your/image.jpg) no-repeat;
+	}
+
+.circular img {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	}
+
+.profile-info {
+  font-size: 16px;
+}
+
+.profile-info p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.profile-info h4 {
+  font-size: 16px;
+  color: #68798B;
+}
+
+.profile-info i {
+  color: #68798B;
+}
+
+.profile-details {
+  background-color: rgba(255, 255, 255, 0.80);
+  padding: 20px 50px 20px 50px;
+}
+
+.profile-details .details {
+  margin: 0px auto;
+    width: 600px;
+}
+
+.details-title {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.profile-details p {
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.profile-details h3 {
+ width: 100%;
+ text-align: center;
+ border-bottom: 2px solid #95B9D4;
+ line-height: 0.1em;
+ margin: 10px 0 20px;
+}
+
+.profile-details h3 span {
+  font-size: 18px;
+  color: #1f1e1e;
+  background:#fcfcfc;
+  padding:0 10px;
+}

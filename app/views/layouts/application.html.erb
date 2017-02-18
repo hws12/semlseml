@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seml</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', '': 'reload' %>
+    <%= javascript_include_tag 'application', '': 'reload' %>
+  </head>
+
+  <body>
+    <div class="main-header">
+      <div class="container">
+        <div class="col-sm-4 col-md-6 vertical-container">
+          <%= image_tag("logo.png", class: "logo-ntust") %>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6 logo-main">
+          <div class="content">
+            <h4>臺灣科技大學 ｜ 資訊管理系</h4>
+            <h4>軟體工程與管理研究中心</h4>
+            <h5>Software Engineering and Management Research Center</h5>
+          </div>
+        </div>
+      </div>
+      <div class="nav-list container">
+        <nav id="custom-bootstrap-menu" class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">SEML</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar navbar-nav navbar-right">
+                <li>
+                  <a href="#">基本資料</a>
+                </li>
+                <li>
+                  <a href="#">研究</a>
+                </li>
+                <li>
+                  <a href="#">指導</a>
+                </li>
+                <li>
+                  <a href="#">課程</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">Action</a>
+                    </li>
+                    <li>
+                      <a href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a href="#">Something else here</a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                      <a href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
