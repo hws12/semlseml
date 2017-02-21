@@ -2,17 +2,44 @@
 .nav-tabs > li.rounded.active > a:hover,
 .nav-tabs > li.rounded.active > a:focus
  {
-    background-color:cadetblue;
-    font-weight:bolder;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-   color:orange;
+  //   background-color:cadetblue;
+  //   font-weight:bolder;
+  //   border-top-left-radius:10px;
+  //   border-top-right-radius:10px;
+  //  color:orange;
+  background: #95c5dd;
+    color: #fff;
+    position: relative;
 }
+
+.nav-tabs > li.rounded.active:after
+ {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 5px solid;
+  border-top-color: #95c5dd;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+ }
+
 .nav-tabs > li.rounded > a
  {
-    background-color:cadetblue;
+    background-color:#ededed;
+    color: #777;
     font-weight:bolder;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-   color:white;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+  //  color:white;
+}
+.nav-tabs {
+    border-bottom: 0px solid #ddd;
+}
+.nav-tabs > li > a {
+    margin-right: 0px;
 }
