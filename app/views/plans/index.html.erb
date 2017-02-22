@@ -2,30 +2,17 @@
   <div class="row">
     <div class="col-md-12 profile-details">
       <div class="details-title">
-        <h3><span>研究領域 Research Scope </span></h3>
+        <h3><span>研究計劃 Research Plan </span></h3>
       </div>
       <div class="scope-details">
-        <!-- <ul>
-          <li>軟體工程 系統分析與設計、軟體流程模式、軟體測試、軟體驗證與確認、軟體度量與分析、電腦輔助軟體工程工具(CASE)等相關議題。</li>
-          <li>Emai: maichau@email.com</li>
-          <li>Phone : +84 123 456 789</li>
-          <li>Website: <a href="http://Thdesgn.com" target="_blank">Yourdomain.com</a></li>
-        </ul> -->
         <ol class="rectangle-list disabled">
-          <li><a href="">【軟體工程】</a>
-          <ol>系統分析與設計、軟體流程模式、軟體測試、軟體驗證與確認、軟體度量與分析、電腦輔助軟體工程工具(CASE)等相關議題。</ol>
-          </li>
-          <li><a href="">【軟體專案管理】</a>
-          <ol>軟體品質管理、軟體風險管理、軟體建構管理、軟體委外管理、量化專案管理、軟體大小、工作量與成本預估等相關議題。</ol>
-          </li>
-          <li><a href="">【軟體流程改善】</a>
-          <ol>軟體能力成熟度整合模式(CMMI)、團隊流程模式(TSP)、個人流程模式(PSP)、軟體流程評估、軟體流程績效等相關議題。</ol>
-          </li>
-          <li><a href="">【軟體度量與分析】</a>
-          <ol>軟體工程度量理論、軟體度量指標、軟體品質度量指標與評估模式、軟體度量導入模式、軟體可靠度模式、軟體安全性度量與評估等相關議題。</ol>
-          </li>
-          <li><a href="">【軟體度量技術方法】</a>
-          <ol>人工智慧、資料探勘、類神經網路、模糊集合/邏輯、基因演算法、法則式推理、統計方法、模糊決策樹等技術應用在軟體評估與預估模式建構應用之研究。</ol>
+          <% @plans.each do |plan| %>
+            <li><a href=""><%= plan.name %></a>
+            <ol>擔任職掌 : <%= plan.role %> </ol>
+            <ol>起迄年月 : <%= plan.period %> </ol>
+            <ol>贊助單位 : <%= plan.sponsor %></ol>
+            </li>
+          <% end %>
         </ol>
       </div>
     </div>
