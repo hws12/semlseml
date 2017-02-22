@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  role: MyString
+  period: MyString
+  string: MyString
+  sponsor: MyString
+
+two:
+  name: MyString
+  role: MyString
+  period: MyString
+  string: MyString
+  sponsor: MyString
