@@ -1,0 +1,52 @@
+.course-content {
+  padding-top: 15px;
+  margin: 0 auto;
+  width: 70%;
+}
+.heading h6 {
+  padding: 15px 15px;
+font-size: 16px;
+letter-spacing: 0.5px;
+margin-top: 0px;
+margin-bottom: 0px;
+background-color: #629aa9;
+color: #ffffff;
+}
+
+.course-content span {
+      color: #629aa9;
+      letter-spacing: 0.25px;
+      display: block;
+      margin-bottom: 3px;
+      padding-top: 15px;
+  }
+
+.course-content p {
+  text-align: justify;
+}
+
+.line-dec {
+      width: 56px;
+      height: 2px;
+      background-color: #629aa9;
+  }
+
+
+.course-content  ul li {
+    list-style-type: decimal;
+  }
+
+.course-content ul {
+      padding: 6px 0px 0px 15px;
+}
+
+
+.tags {
+  // width: 80px;
+   display: inline-block;
+border-radius: 20px;
+padding: 5px 10px;
+font-size: 12px;
+color: #ffffff;
+background-color: #95b9d4;
+}
