@@ -27,6 +27,7 @@ gem 'capistrano', '~> 3.7', '>= 3.7.1'
 gem 'capistrano-rails', '~> 1.2'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem "capistrano-scm-gitcopy"
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
 
 group :development, :test do
@@ -34,7 +35,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem "better_errors"
   gem "binding_of_caller"
-  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+
 end
 
 group :development do
