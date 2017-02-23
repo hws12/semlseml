@@ -8,7 +8,9 @@ set :deploy_to, '/home/nana/seml'
 set :user, "nana"
 set :use_sudo, true
 set :passenger_in_gemfile, true
-set :rbenv_path, '/root/.rbenv'
+# set :rbenv_path, '~/root/.rbenv'
+set :rbenv_path, '/home/nana/.rbenv'
+
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
