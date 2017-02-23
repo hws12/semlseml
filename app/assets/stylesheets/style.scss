@@ -1,0 +1,376 @@
+*:not(.fa) {
+  font-family: helvetica,xingothic-tc;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.logo-ntust {
+  width: 100%;
+  max-width: 450px;
+ }
+
+.content {
+  padding: 19px;
+}
+
+.vertical-container {
+  height: 150px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.logo-main {
+  text-align: right;
+  color: #68798B;
+  margin: 14px auto;
+}
+
+.navbar {
+  font-size: 16px;
+}
+
+.main-header .container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(252, 252, 252, 1);
+    border-bottom-width: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(119, 119, 119, 1);
+    background-color: rgba(252, 252, 252, 0.97);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(230, 239, 245, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(230, 239, 245, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #e6eff5;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #e6eff5;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e6eff5;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #fcfcfc;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+  padding-top: 20px;
+}
+
+
+.course-content {
+  padding-top: 15px;
+  margin: 0 auto;
+  width: 70%;
+}
+.heading h6 {
+  padding: 15px 15px;
+font-size: 16px;
+letter-spacing: 0.5px;
+margin-top: 0px;
+margin-bottom: 0px;
+background-color: #629aa9;
+color: #ffffff;
+}
+
+.course-content span {
+      color: #629aa9;
+      letter-spacing: 0.25px;
+      display: block;
+      margin-bottom: 3px;
+      padding-top: 15px;
+  }
+
+.course-content p {
+  text-align: justify;
+}
+
+.line-dec {
+      width: 56px;
+      height: 2px;
+      background-color: #629aa9;
+  }
+
+
+.course-content  ul li {
+    list-style-type: decimal;
+  }
+
+.course-content ul {
+      padding: 6px 0px 0px 15px;
+}
+
+
+.tags {
+  // width: 80px;
+   display: inline-block;
+border-radius: 20px;
+padding: 5px 10px;
+font-size: 12px;
+color: #ffffff;
+background-color: #95b9d4;
+}
+
+
+.scope-details {
+  margin: 0px auto;
+  padding-top: 10px;
+  width: 70%;
+}
+
+// .plan ul {
+//    list-style-type:square;
+//     /*background: #5fb5b2;*/
+//   }
+ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol ol {
+    margin: 0 0 0 3em; /* Add some left margin for inner lists */
+}
+
+.rectangle-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    // pointer-events: none;
+   cursor: default;
+}
+
+.rectangle-list a:hover{
+    background: #eee;
+}
+
+.rectangle-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #95c5dd;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rectangle-list a:after{
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+
+.rectangle-list a:hover:after{
+    left: -.5em;
+    border-left-color: #95c5dd;
+}
+
+
+// Place all the styles related to the profile controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.vertical-container-profile {
+  height: 350px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.profile-content{
+  padding: 50px;
+}
+.profile-photo{
+  width: 100%;
+}
+.circular {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://link-to-your/image.jpg) no-repeat;
+	}
+
+.circular img {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	}
+
+.profile-info {
+  font-size: 16px;
+}
+
+.profile-info p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.profile-info h4 {
+  font-size: 16px;
+  color: #68798B;
+}
+
+.profile-info i {
+  color: #68798B;
+}
+
+.profile-details {
+  background-color: rgba(255, 255, 255, 0.80);
+  padding: 20px 50px 20px 50px;
+}
+
+.profile-details .details {
+  margin: 0px auto;
+    width: 600px;
+}
+
+.details-title {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.profile-details p {
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.profile-details h3 {
+ width: 100%;
+ text-align: center;
+ border-bottom: 2px solid #95B9D4;
+ line-height: 0.1em;
+ margin: 10px 0 20px;
+}
+
+.title-details h3 {
+ width: 100%;
+ text-align: center;
+ border-bottom: 2px solid #95B9D4;
+ line-height: 0.1em;
+ margin: 10px 0 20px;
+}
+
+.profile-details h3 span {
+  font-size: 18px;
+  color: #1f1e1e;
+  background:#fcfcfc;
+  padding:0 10px;
+}
+
+.title-details h3 span {
+  font-size: 18px;
+  color: #1f1e1e;
+  background:#fcfcfc;
+  padding:0 10px;
+}
+
+
+.nav-tabs > li.rounded.active > a,
+.nav-tabs > li.rounded.active > a:hover,
+.nav-tabs > li.rounded.active > a:focus
+ {
+  //   background-color:cadetblue;
+  //   font-weight:bolder;
+  //   border-top-left-radius:10px;
+  //   border-top-right-radius:10px;
+  //  color:orange;
+  background: #95c5dd;
+    color: #fff;
+    position: relative;
+}
+
+.nav-tabs > li.rounded.active:after
+ {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 5px solid;
+  border-top-color: #95c5dd;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+ }
+
+.nav-tabs > li.rounded > a
+ {
+    background-color:#ededed;
+    color: #777;
+    font-weight:bolder;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+  //  color:white;
+}
+.nav-tabs {
+    border-bottom: 0px solid #ddd;
+}
+.nav-tabs > li > a {
+    margin-right: 0px;
+}
