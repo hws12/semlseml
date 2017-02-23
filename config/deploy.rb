@@ -2,8 +2,7 @@
 lock "3.7.2"
 
 set :application, "seml"
-# set :repo_url, "."
-set :scm, :gitcopy
+set :repo_url, "git@example.com:me/my_repo.git"
 
 set :deploy_to, '/home/deploy/seml'
 
