@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
 
+  # before_action :authenticate_user!, :only => [ :new, :create, :update, :destroy ]
+  # before_action :authorize_admin, :only => [ :new, :create, :update, :destroy ]
+
   def index
     @users = User.all
       respond_to do |format|
@@ -49,6 +52,6 @@ class UsersController < ApplicationController
 
   protected
   def user_params
-    params[:user].permit(:type, :name, :degree, :research_topic, :job, :email, :phone)
+    params[:user].permit(:type, :name, :degree, :research_topic, :job, :email, :phone, :status)
   end
 end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  degree: 1
+  s_type: 1
+  research_topic: MyString
+  status: 1
+
+two:
+  name: MyString
+  degree: 1
+  s_type: 1
+  research_topic: MyString
+  status: 1

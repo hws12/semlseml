@@ -1,0 +1,38 @@
+
+<div class="container section" id="students" style="padding-top:15px;">
+
+
+          <%= form_for @user, url: {action: "create"} do |f| %>
+            <div class="field">
+              <%= f.label :name %><br />
+              <%= f.text_field :name, autofocus: true %>
+            </div>
+            <div class="field">
+              <%= f.label :email %><br />
+              <%= f.text_field :email, autofocus: true %>
+            </div>
+            <div class="field">
+              <%= f.label :degree %><br />
+              <%= f.text_field :degree, autofocus: true %>
+            </div>
+            <div class="field">
+              <%= f.label :research_topic %><br />
+              <%= f.text_field :research_topic, autofocus: true %>
+            </div>
+            <div class="field">
+              <%= f.label :status %><br />
+              <%= f.select :status, options_for_select(User.statuses) %>
+              <%#= f.status_field :status, autofocus: true %>
+            </div>
+            <div class="field">
+              <%= f.label :user_type %><br />
+              <%= f.select :user_type, options_for_select(User.user_types) %>
+            </div>
+      
+
+
+            <div class="actions">
+              <%= f.submit "Create" %>
+            </div>
+          <% end %>
+</div>

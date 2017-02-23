@@ -82,7 +82,22 @@
  margin: 10px 0 20px;
 }
 
+.title-details h3 {
+ width: 100%;
+ text-align: center;
+ border-bottom: 2px solid #95B9D4;
+ line-height: 0.1em;
+ margin: 10px 0 20px;
+}
+
 .profile-details h3 span {
+  font-size: 18px;
+  color: #1f1e1e;
+  background:#fcfcfc;
+  padding:0 10px;
+}
+
+.title-details h3 span {
   font-size: 18px;
   color: #1f1e1e;
   background:#fcfcfc;

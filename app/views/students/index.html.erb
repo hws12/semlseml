@@ -1,71 +1,86 @@
 
-<div class="container section" id="students" style="padding-top:15px;">
-  <% if current_user.admin? %>
-  <%= link_to(new_user_path(@user), class:"tags") do  %>
+<div class="container section plan" id="students" style="padding-top:15px;">
+  <% if current_user.try(:admin?) %>
+  <%= link_to(new_student_path(@student), class:"tags") do  %>
     <div class=""></div> 新增
     <% end %>
   <% end %>
-<% @users.group_by(&:status).each do |status, users| %>
-  <div class="clients-list">
+<% @students.group_by(&:status).each do |status, users| %>
+  <div class="row">
+    <div class="col-md-12 title-details">
+      <div class="details-title">
+        <% if status == "alumni" %>
+        <h3><span>畢業學生</span></h3>
+        <% else %>
+        <h3><span>指導學生</span></h3>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="list">
     <ul class="nav nav-tabs">
-      <!-- <span class="pull-right small text-muted"><%#= User.all.count%> Elements</span> -->
       <li class="rounded active">
-        <a data-toggle="tab" href="#tab-<%=status%>-0">
+        <a data-toggle="tab" href="#tab-<%=status%>-dr">
           <i class="fa fa-user"></i>
           博班</a>
       </li>
       <li class="rounded ">
-        <a data-toggle="tab" href="#tab-<%=status%>-1">
+        <a data-toggle="tab" href="#tab-<%=status%>-edba">
           <i class="fa fa-user"></i>
           EDBA</a>
       </li>
       <li class="rounded ">
-        <a data-toggle="tab" href="#tab-<%=status%>-2">
+        <a data-toggle="tab" href="#tab-<%=status%>-emba">
           <i class="fa fa-user"></i>
           EMBA</a>
       </li>
       <li class="rounded ">
-        <a data-toggle="tab" href="#tab-<%=status%>-3">
+        <a data-toggle="tab" href="#tab-<%=status%>-graduate">
           <i class="fa fa-user"></i>
           碩士班</a>
       </li>
       <li class="rounded ">
-        <a data-toggle="tab" href="#tab-<%=status%>-4">
+        <a data-toggle="tab" href="#tab-<%=status%>-under_graduate">
           <i class="fa fa-user"></i>
           專題生</a>
       </li>
     </ul>
     <div class="tab-content" style="padding-top:15px;">
-      <% users.group_by(&:user_type).each do |type, users_bytype| %>
-        <div id="tab-<%=status%>-<%= type %>" class="tab-pane <%= "active" if type==0 %> ">
+      <% users.group_by(&:s_type).each do |s_type, users_bytype| %>
+        <div id="tab-<%=status%>-<%= s_type %>" class="tab-pane <%= "active" if s_type == "dr" %> ">
           <div class="full-height-scroll">
             <div class="table-responsive">
               <table class="table table-striped table-hover">
                 <thead>
                   <tr>
+                    <% if status == "alumni" %>
+                    <th>畢業編號</th>
+                    <% end %>
                     <th>級別</th>
                     <th>姓名</th>
                     <th>研究主題</th>
                     <th>聯絡方式</th>
-                    <th>狀態</th>
-                    <% if current_user.admin? %>
+                    <% if current_user.try(:admin?) %>
                     <th>編輯</th>
                     <% end %>
 
                   </tr>
                 </thead>
                 <tbody>
-                  <% for user in users_bytype %>
+                    <% for user in users_bytype.sort%>
                   <tr>
                     <tr>
+                      <% if status == "alumni" %>
+                      <td><%= user.graduated_num %></td>
+                      <% end %>
                       <td><%= user.degree rescue "" %></td>
                       <td><%= user.name %></td>
                       <td><%= user.research_topic rescue "" %></td>
                       <td>  <i class="fa fa-envelope"></i> <%= user.email %></td>
-                      <td>已畢業</td>
-                      <% if current_user.admin? %>
+                      <% if current_user.try(:admin?) %>
                       <td>
-                        編輯
+                        <%= link_to "編輯", edit_student_path(user) %>
+                        <%= link_to "刪除", student_path(user), method: :delete%>
                       </td>
                       <% end %>
                     </tr>
@@ -78,9 +93,6 @@
         </div>
       <% end %>
     </div>
-
   </div>
-
-
 <% end %>
 </div>
