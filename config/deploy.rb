@@ -4,7 +4,7 @@ lock "3.7.2"
 set :application, "seml"
 set :repo_url, "git@github.com:hws12/semlseml.git"
 
-set :deploy_to, '/home/deploy/seml'
+set :deploy_to, '/home/nana/seml'
 set :user, "nana"
 set :use_sudo, true
 
