@@ -9,12 +9,12 @@ set :user, "nana"
 set :use_sudo, true
 set :passenger_in_gemfile, true
 # set :rbenv_path, '~/root/.rbenv'
-# set :rbenv_path, '/home/nana/.rbenv'
+set :rbenv_path, '/home/nana/.rbenv/'
 # # set :default_environment, { 'PATH' => '$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH' }
 # set :default_environment, {
 #   'PATH' => "/opt/ruby-enterprise/bin/:$PATH"
 # }
-set :rbenv_ruby, '2.3.1-p112'
+set :rbenv_ruby, '2.3.1'
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
