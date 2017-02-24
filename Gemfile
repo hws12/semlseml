@@ -29,6 +29,7 @@ gem 'capistrano-passenger', '~> 0.2.0'
 gem "capistrano-scm-gitcopy"
 gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
+gem 'right_http_connection', git: 'git://github.com/rightscale/right_http_connection.git', ref: '3359524d81'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
