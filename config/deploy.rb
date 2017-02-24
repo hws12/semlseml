@@ -1,10 +1,10 @@
 # config valid only for current version of Capistrano
 lock "3.7.2"
 
-set :application, "seml"
+set :application, "seml2"
 set :repo_url, "git@github.com:hws12/semlseml.git"
 
-set :deploy_to, '/home/nana/seml'
+set :deploy_to, '/home/nana/seml2'
 set :user, "nana"
 set :use_sudo, true
 set :passenger_in_gemfile, true
