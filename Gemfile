@@ -23,11 +23,6 @@ gem "font-awesome-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
-gem 'capistrano', '~> 3.7', '>= 3.7.1'
-gem 'capistrano-rails', '~> 1.2'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem "capistrano-scm-gitcopy"
-gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
 gem 'right_http_connection', git: 'git://github.com/rightscale/right_http_connection.git', ref: '3359524d81'
 
@@ -36,6 +31,12 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem "better_errors"
   gem "binding_of_caller"
+  gem 'capistrano', '~> 3.7', '>= 3.7.1'
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-passenger', '~> 0.2.0'
+  gem "capistrano-scm-gitcopy"
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+
 
 end
 
